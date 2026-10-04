@@ -1,0 +1,114 @@
+:root {
+    --bleu-clinique: #0d6e6e;
+    --bleu-fonce: #094f4f;
+    --gris-clair: #f4f7f7;
+    --accent: #e8a33d;
+}
+
+body {
+    background-color: var(--gris-clair);
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    color: #23393a;
+}
+
+.navbar-clinique {
+    background-color: var(--bleu-clinique);
+}
+.navbar-clinique .navbar-brand,
+.navbar-clinique .nav-link {
+    color: #fff !important;
+    font-weight: 500;
+}
+.navbar-clinique .nav-link:hover {
+    color: var(--accent) !important;
+}
+
+.hero {
+    background: linear-gradient(135deg, var(--bleu-clinique), var(--bleu-fonce));
+    color: #fff;
+    padding: 70px 0;
+}
+.hero h1 { font-weight: 700; }
+.hero p { font-size: 1.1rem; opacity: .9; }
+
+.btn-clinique {
+    background-color: var(--bleu-clinique);
+    border-color: var(--bleu-clinique);
+    color: #fff;
+}
+.btn-clinique:hover {
+    background-color: var(--bleu-fonce);
+    border-color: var(--bleu-fonce);
+    color: #fff;
+}
+.btn-accent {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #23393a;
+    font-weight: 600;
+}
+.btn-accent:hover {
+    background-color: #d18f2e;
+    color: #23393a;
+}
+
+.card-medecin {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    transition: transform .15s ease;
+    height: 100%;
+}
+.card-medecin:hover { transform: translateY(-4px); }
+.card-medecin .avatar {
+    width: 70px; height: 70px;
+    border-radius: 50%;
+    background: var(--bleu-clinique);
+    color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem; font-weight: 700;
+}
+
+.card-form {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,.08);
+}
+
+.creneau-btn {
+    margin: 4px;
+}
+.creneau-btn.selected {
+    background-color: var(--bleu-clinique) !important;
+    color: #fff !important;
+    border-color: var(--bleu-clinique) !important;
+}
+
+footer {
+    background-color: var(--bleu-fonce);
+    color: #dfeaea;
+    padding: 30px 0;
+    margin-top: 60px;
+}
+
+.table-clinique thead {
+    background-color: var(--bleu-clinique);
+    color: #fff;
+}
+
+.sidebar-admin {
+    background-color: var(--bleu-fonce);
+    min-height: calc(100vh - 56px);
+}
+.sidebar-admin a {
+    color: #dfeaea;
+    display: block;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-left: 4px solid transparent;
+}
+.sidebar-admin a:hover, .sidebar-admin a.active {
+    background-color: rgba(255,255,255,.08);
+    border-left-color: var(--accent);
+    color: #fff;
+}
